@@ -1,0 +1,19 @@
+body {
+  max-width: 500px;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 1.5em;
+}
+
+h1 {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 800;
+}
+
+p {
+  font-family: 'Gentium Basic', serif;
+}
+
+.quote-author {
+  font-weight: 700;
+}
