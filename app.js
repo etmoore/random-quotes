@@ -16,3 +16,17 @@ var quotes = [
     author: "Mark Twain"
   },
 ];
+
+function getRandomQuote(){
+  return quotes[Math.floor(Math.random() * quotes.length)];
+}
+
+function displayNewQuote(){
+  var quote = getRandomQuote();
+  $('.quote-body').text(quote.body);
+  $('.quote-author').text(quote.author);
+}
+
+$('button').on('click', displayNewQuote);
+
+displayNewQuote();
