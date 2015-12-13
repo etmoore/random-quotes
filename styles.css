@@ -13,7 +13,7 @@ body {
 }
 
 .quote {
-  height: 137px;
+  min-height: 135px;
 }
 
 h1 {
