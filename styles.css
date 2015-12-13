@@ -1,13 +1,25 @@
 body {
-  max-width: 500px;
-  margin: 0 auto;
   text-align: center;
   font-size: 1.5em;
+}
+
+.wrapper {
+  margin: 0 auto;
+  max-width: 650px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.quote {
+  height: 137px;
 }
 
 h1 {
   font-family: 'Open Sans', sans-serif;
   font-weight: 800;
+  margin-top: 0px;
 }
 
 p {
@@ -16,4 +28,12 @@ p {
 
 .quote-author {
   font-weight: 700;
+}
+
+button {
+  width: 133px;
+  height: 49px;
+  font-size: 19px;
+  background-color: cyan;
+  border: 1px solid black;
 }
