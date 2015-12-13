@@ -25,12 +25,22 @@ function displayNewQuote(){
   var quote = getRandomQuote();
   $('.quote-body').text(quote.body);
   $('.quote-author').text(quote.author);
-  $('a#b').attr(
-    'href',
-    'https://twitter.com/intent/tweet?text=' + quote.body + ' - ' + quote.author
-  )
+  createTwitterShareButton(quote.body, quote.author);
+}
+
+function createTwitterShareButton(body, author){
+  $('#twitter-share-button').empty();
+  twttr.widgets.createShareButton(
+    '',
+    document.getElementById('twitter-share-button'),
+    {
+      text: body + ' - ' + author
+    }
+  );
 }
 
 $('button').on('click', displayNewQuote);
 
-displayNewQuote();
+twttr.ready(function(){
+  displayNewQuote();
+});
