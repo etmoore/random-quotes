@@ -1,28 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>Random Quotes</title>
+  <head>
+    <meta charset="UTF-8">
+    <title>Random Quotes</title>
 
-  <link
-  href='https://fonts.googleapis.com/css?family=Open+Sans:800,400|Gentium+Basic:400,700'
-  rel='stylesheet' type='text/css'>
-  <link rel="stylesheet" href="styles.css">
-</head>
-<body>
+    <link
+          href='https://fonts.googleapis.com/css?family=Open+Sans:800,400|Gentium+Basic:400,700'
+          rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
 
-  <div class="wrapper">
-    <h1>Random Quotes</h1>
+    <div class="wrapper">
+      <h1>Random Quotes</h1>
 
-    <div class="quote">
-      <p class="quote-body"></p>
-      <p class="quote-author"></p>
+      <div class="quote">
+        <p class="quote-body"></p>
+        <p class="quote-author"></p>
+      </div>
+
+      <button>New Quote</button>
+
+      <div id="twitter-share-button"></div>
     </div>
 
-    <button>New Quote</button>
-  </div>
-
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.js"></script>
-  <script src="app.js"></script>
-</body>
+    <script>window.twttr = (function(d, s, id) { var js, fjs = d.getElementsByTagName(s)[0], t = window.twttr || {}; if (d.getElementById(id)) return t; js = d.createElement(s); js.id = id; js.src = "https://platform.twitter.com/widgets.js"; fjs.parentNode.insertBefore(js, fjs); t._e = []; t.ready = function(f) { t._e.push(f); }; return t; }(document, "script", "twitter-wjs"));</script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.js"></script>
+    <script src="app.js"></script>
+  </body>
 </html>

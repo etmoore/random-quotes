@@ -25,8 +25,20 @@ function displayNewQuote(){
   var quote = getRandomQuote();
   $('.quote-body').text(quote.body);
   $('.quote-author').text(quote.author);
+  createTwitterButton(quote.body, quote.author);
+}
+
+function createTwitterButton(body, author){
+  twttr.widgets.createShareButton(
+    "",
+    document.getElementById("twitter-share-button"),
+    {
+      size: "large",
+      text: body + " - " + author,
+    }
+  );
 }
 
 $('button').on('click', displayNewQuote);
 
-displayNewQuote();
+twttr.ready(displayNewQuote);

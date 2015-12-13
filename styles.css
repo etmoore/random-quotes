@@ -37,3 +37,8 @@ button {
   background-color: cyan;
   border: 1px solid black;
 }
+
+.twitter-share-button {
+  display: block;
+  margin: 20px auto;
+}
